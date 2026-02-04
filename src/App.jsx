@@ -13,7 +13,7 @@ function App() {
     return (
       <>
         <div className="reveal-screen"></div>
-        <div class="Scene3D"><ThreeScene/></div>
+        <div className="Scene3D"><ThreeScene/></div>
         <NewComponent setPage={setPage} SETfrenchORenglish={SETfrenchORenglish} frenchORenglish={frenchORenglish}/>
       </>
     )
@@ -21,7 +21,7 @@ function App() {
     return (
       <>
         <div className="reveal-screen"></div>
-        <div class="Scene3D"><ThreeScene/></div>
+        <div className="Scene3D"><ThreeScene/></div>
         <NewComponentProjects setPage={setPage} SETfrenchORenglish={SETfrenchORenglish} frenchORenglish={frenchORenglish}/>
       </>
     )
@@ -29,7 +29,7 @@ function App() {
     return (
       <>
         <div className="reveal-screen"></div>
-        <div class="Scene3D"><ThreeScene/></div>
+        <div className="Scene3D"><ThreeScene/></div>
         <NewComponentContacts setPage={setPage} SETfrenchORenglish={SETfrenchORenglish} frenchORenglish={frenchORenglish}/>
       </>
     )

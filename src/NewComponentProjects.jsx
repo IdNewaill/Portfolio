@@ -34,7 +34,7 @@ function NewComponent(props){
 
     return (
         <>
-            <div align="right" class="language">
+            <div align="right" className="language">
                 <button onClick={setEnglish}>EN</button>
                 <button onClick={setFrench}>FR</button>
             </div>
@@ -43,44 +43,58 @@ function NewComponent(props){
                 <button onMouseEnter={PlayonHover}>{frenchORenglish?'Projects':'Projets'}</button>
                 <button onMouseEnter={PlayonHover} onClick={seeContact}>Contact</button>
             </div>
-            <div class="simple-presentation-div">
+            <div className="simple-presentation-div">
                 <h3>{frenchORenglish?"Some of my Projects":"Quelques de mes Projets"}</h3>
             </div>
-            <div class="global-info-block">
-                <div class="left-aligned-class">
-                    <div class="tag-work-in-progress">
+            <div className="global-info-block">
+                <div className="left-aligned-class">
+                    <div className="tag-work-in-progress">
+                        <h3>{frenchORenglish?'Released !':'Disponible !'}</h3>
+                    </div>
+                    <h2>{frenchORenglish?"PaperIO remix":"Remix du jeu 'paperio'"}</h2>
+                </div>
+                <div className="project-presentation">
+                    <video src="../ressources/videos/demoOfPaperIO.mp4" width="100%" height="500px" autoPlay muted loop preload="metadata"></video>
+                    <h2>{frenchORenglish?"A simple remake made in Python on a Numworks":"Un simple Remix fait en Python sur une Numworks"}</h2>
+                </div>
+            </div>
+
+
+            <div className="global-info-block">
+                <div className="left-aligned-class">
+                    <div className="tag-work-in-progress">
                         <h3>{frenchORenglish?'Work in progress !':'En cours !'}</h3>
                     </div>
                     <h2>{frenchORenglish?"Lymen Studio - small LLC n":"Lymen Studio - petite SARL"}</h2>
                 </div>
-                <div class="project-presentation">
+                <div className="project-presentation">
                     <iframe src="https://lymen-studio.fr/" width="100%" height="500px"></iframe>
                     <h2>{frenchORenglish?"It’s a Small LLC, made with friends selling differents services around developement and design.":"C'est une petite SARL, faite avec des amis proposant divers services tel que le développement et le design"}</h2>
-                    <h1>For now it’s just a idea but you can check out the website ! (not fully made too)</h1>
+                    <h1>{frenchORenglish?"For now it’s just a idea but feel free to check the website ! (not fully made too)":"Pour l'instant il s'agit simplement d'une idée mais vous pouvez allez jeter un coup d'oeil au site !"}</h1>
                 </div>
             </div>
 
-            <div class="global-info-block">
-                <div class="left-aligned-class">
-                    <div class="tag-work-in-progress">
+            <div className="global-info-block">
+                <div className="left-aligned-class">
+                    <div className="tag-work-in-progress">
                         <h3>{frenchORenglish?'Work in progress !':'En cours !'}</h3>
                     </div>
                     <h2>{frenchORenglish?"Forgotten Files - Horror Game":"Forgotten Files - Jeu d'horreur"}</h2>
                 </div>
-                <div class="project-presentation">
+                <div className="project-presentation">
                     <img draggable="false" src="../ressources/images/ForgottenFilesImage.png" width="100%" height="100%"></img>
                     <h2>{frenchORenglish?"It’s an horror game in the Fives Nights At Freddy’s type.":"C'est un jeu d'horreur sur le thème de Fives Nights At Freddy's."}</h2>
-                    <div class="normal-left-text">
+                    <div className="normal-left-text">
                         <h1>{frenchORenglish?"The game is still in developement but I hired voice actors and 47 peoples have applied.":"Le jeu est toujours dans sa phase de développement mais j'ai recruter des voice-actors et 47 personnes ont postulés."}</h1>
                         <h1>{frenchORenglish?"I’ve also worked on it with somes friends, it make me learn to :":"J'y ai travailler avec des amis, cela m'a permiti de :"}</h1>
-                        <h1>○ {frenchORenglish?"Manage a":"Diriger une"} <span class="highlight-me-red">{frenchORenglish?"team":"équipe"}</span></h1>
-                        <h1>○ <span class="highlight-me-yellow">{frenchORenglish?"Recruit":"Recruter"}</span></h1>
-                        <h1>○ {frenchORenglish?"Be":"Être"} <span class="highlight-me-green">{frenchORenglish?"multitasking":"multi-tâches"}</span></h1>
-                        <h1>{frenchORenglish?"And":"Et"} <span class="highlight-me-blue">{frenchORenglish?"more":"bien plus"}</span> !</h1>
+                        <h1>○ {frenchORenglish?"Manage a":"Diriger une"} <span className="highlight-me-red">{frenchORenglish?"team":"équipe"}</span></h1>
+                        <h1>○ <span className="highlight-me-yellow">{frenchORenglish?"Recruit":"Recruter"}</span></h1>
+                        <h1>○ {frenchORenglish?"Be":"Être"} <span className="highlight-me-green">{frenchORenglish?"multitasking":"multi-tâches"}</span></h1>
+                        <h1>{frenchORenglish?"And":"Et"} <span className="highlight-me-blue">{frenchORenglish?"more":"bien plus"}</span> !</h1>
                     </div>
                 </div>
             </div>
-            <div class="simple-presentation-div" onClick={() => window.location.href = "https://github.com/IdNewaill"}>
+            <div className="simple-presentation-div" onClick={() => window.location.href = "https://github.com/IdNewaill"}>
                 <img src="../ressources/images/github_logo.png" width="10%"></img>
                 <h3>{frenchORenglish?"Discover more on my Github":"Découvrez plus sur mon Github"} !</h3>
             </div>
