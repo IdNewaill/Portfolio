@@ -5,8 +5,8 @@ function NewComponent(props){
     const { SETfrenchORenglish } = props;
     const { frenchORenglish } = props ;
 
-    const hover_sound = new Audio("/Portfolio/ressources/sons/onHover.wav")
-    const click2_sound = new Audio("/Portfolio/ressources/sons/click2.wav")
+    const hover_sound = new Audio("../ressources/sons/onHover.wav")
+    const click2_sound = new Audio("../ressources/sons/click2.wav")
 
     function PlayonHover(){
         hover_sound.play();

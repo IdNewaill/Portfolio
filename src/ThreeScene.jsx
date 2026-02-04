@@ -39,7 +39,7 @@ export default function ThreeScene() {
       if (modelLoaded.current) return;
       
       loader.load(
-        '/Portfolio/3Dmodels/Knuckles/scene.gltf',
+        '/3Dmodels/Knuckles/scene.gltf',
         (gltf) => {
           if (model) scene.remove(model);
           
