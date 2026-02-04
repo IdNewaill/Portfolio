@@ -56,7 +56,6 @@
   font-size: 100%;
   background-color: rgb(255, 255, 255);
   border-radius: 25px;
-  padding-left:3%;
   height: 28px;
   border: none;
   width: 25%;
@@ -84,6 +83,7 @@
 
 .simple-presentation-div h3 {
   margin: 0;
+  text-align: center;
 }
 
 .simple-presentation-intro{
@@ -128,6 +128,8 @@
   padding: 5%;
   border-radius: 50px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border:#4285f4;
+  border-style:double;
 }
 
 .global-info-block h2{
@@ -182,14 +184,22 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(#ff5757,#8c52ff);
   text-align: center;
   -webkit-text-fill-color: white;
+  background: linear-gradient(#ff5757,#8c52ff);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin: 5%;
   padding: 2%;
   gap:10vw;
   border-radius:100vw;
+  transition: transform 0.5s ease;
+}
+
+
+.see-more:hover{
+ 
+  cursor:pointer;
+  transform: translateY(5%);
 }
 
 .language button:hover{
@@ -197,7 +207,8 @@
 }
 
 .main-bar button:hover{
-  background-color: #ebe8e7;
+  background-color: #000000;
+  -webkit-text-fill-color: #ededed;
   transition:0.5s;
   cursor:pointer;
 }
@@ -236,12 +247,6 @@ img:hover{
 .highlight-me-yellow:hover{
   font-size: 130%;
   transition:0.5s;
-}
-
-.see-more:hover{
-  background: linear-gradient(#8c52ff,#ff5757);
-  transition:0.5s;
-  cursor:pointer;
 }
 
 .language button{
@@ -286,7 +291,6 @@ img:hover{
   font-size: 20px;
 }
 
-
 .left-aligned-class{
   display: flex;
   align-items: center;
@@ -307,10 +311,17 @@ img:hover{
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-gmail img{
+   align-self: center;
+   margin-bottom: 5%;
 }
 
 .contact-email{
-  background-color: #ededed;
+  background-color: #b9b9b9;
   border-radius: 50px;
   padding: 1vw;
   margin-left: 20%;
@@ -318,7 +329,9 @@ img:hover{
   font-size:100%;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   overflow: hidden;
-  border:none;
+  border: #4285f4;
+  border-style:inset;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .contact-email::after{
@@ -328,32 +341,18 @@ img:hover{
 .contact-email:hover{
   background-color: #4285f4;
   border-radius:10px ;
-  top:-2px;
-  left:-2px;
   background-size: 600%;
-  width: calc(100%+4px);
-  height: calc(100%+4px);
   transition:opacity .3s ease-in-out;
   color: #ededed;
-}
+
+  cursor: pointer;
+  transition:0.2s;
+  border: #4285f4;
+  border-style:solid;}
 
 .contact-email p:hover{
   background: #ededed;
-  filter: blur(0%);
   width: 100%;
   height: 100%;
-}
-
-.contact-gmail img{
-  margin-bottom: 5%; 
-}
-
-.contact-gmail button{
-  margin-bottom: 4%;
-}
-
-.contact-email:hover{
-  cursor: pointer;
-  transition:0.2s;
 }
 
