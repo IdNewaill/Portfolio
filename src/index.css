@@ -36,7 +36,6 @@
   background: none;
   border:none;
   -webkit-text-fill-color: white;
-  
 }
 
 .main-bar {
@@ -73,8 +72,14 @@
   justify-content: center;
   gap: 1vh;
   height: 40vh;
-  font-size: 7vh;
+  font-size: 6vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media (max-width: 500px) {
+  .simple-presentation-div {
+    font-size: 4.5vh; /* ou en rem si plus stable */
+  }
 }
 
 .simple-presentation-div h3 {
@@ -107,6 +112,10 @@
 
 .highlight-me-green{
   -webkit-text-fill-color: #7ed957;
+}
+
+.highlight-me-purple{
+  -webkit-text-fill-color: #751dc2;
 }
 
 .void-div{
@@ -333,15 +342,18 @@ img:hover{
   filter: blur(0%);
   width: 100%;
   height: 100%;
-  
 }
 
 .contact-gmail img{
-  margin-bottom: 5%;
-  
+  margin-bottom: 5%; 
+}
+
+.contact-gmail button{
+  margin-bottom: 4%;
 }
 
 .contact-email:hover{
   cursor: pointer;
   transition:0.2s;
 }
+

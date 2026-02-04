@@ -5,8 +5,8 @@ function NewComponent(props){
     const { SETfrenchORenglish } = props;
     const { frenchORenglish } = props ;
 
-    const hover_sound = new Audio("../ressources/sons/onHover.wav")
-    const click2_sound = new Audio("../ressources/sons/click2.wav")
+    const hover_sound = new Audio("/Portfolio/ressources/sons/onHover.wav")
+    const click2_sound = new Audio("/Portfolio/ressources/sons/click2.wav")
 
     function PlayonHover(){
         hover_sound.play();
@@ -46,7 +46,7 @@ function NewComponent(props){
             </div>
 
             <div class="simple-presentation-div">
-                <h3>{frenchORenglish?"Hi ! I’m Grégoire !":"Salut ! Moi c'est Grégoire !"}</h3>
+                <h3>{frenchORenglish?"Hi ! I’m":"Salut ! Moi c'est"} <span class="highlight-me-purple">Grégoire</span> !</h3>
                 <h3>{frenchORenglish?'A Developer.':"Je suis développeur."}</h3>
             </div>
             <div class="simple-presentation-intro">
@@ -60,29 +60,29 @@ function NewComponent(props){
             <div class="global-info-block">
                 <h2>{frenchORenglish?"It all start with Scratch !":"Tout à commencé avec Scratch !"}</h2>
                 <iframe width="100%" height="500px" src="https://www.youtube.com/embed/N7YSpK3Tbx0" title="security breach scratch by Idaill" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <h3>{frenchORenglish?"When I was in college, the":"Au collège, la découverte de"} <span class="highlight-me-yellow">scratch</span> {frenchORenglish?"discovery was the bigest thing that made my life change":"fut la naissance de cette"} <span class="highlight-me-blue">{frenchORenglish?"complitly":"passion"}</span>{frenchORenglish?" ":"pour l'informatique"}!</h3>
+                <h3>{frenchORenglish?"When I was in college, the":"Au collège, la découverte de"} <span class="highlight-me-yellow">scratch</span> {frenchORenglish?"discovery was the bigest thing that made my life change":"fut la naissance de cette"} <span class="highlight-me-blue">{frenchORenglish?"completely":"passion"}</span>{frenchORenglish?" ":" pour l'informatique"}!</h3>
                 <p>{frenchORenglish?"I spend hours making games, from 2D to 3D Games like it can be seen in this video from a scratch user.":"J'ai passé des heures à la création de divers jeux de la 2D jusqu'à la 3D comme on peut le voir dans cette vidéo d'un utilisateur de Scratch."}</p>
             </div>
 
             <div class="global-info-block">
                 <h2>{frenchORenglish?"KNOWN LANGUAGES":"LANGAGES QUE JE CONNAIS"}</h2>
                 <div class="global-image-box">
-                <img src="../ressources/images/css_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"}></img>
-                <img src="../ressources/images/java_logo.svg" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Java_(langage)"}></img>
-                <img src="../ressources/images/javafx_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/JavaFX"}></img>
-                <img src="../ressources/images/html_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"}></img>
-                <img src="../ressources/images/python_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Python_(langage)"}></img>
-                <img src="../ressources/images/kotlin_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Kotlin_(langage)"}></img>
-                <img src="../ressources/images/lua_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Lua"}></img>
-                <img src="../ressources/images/sql_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Structured_Query_Language"}></img>
-                <img src="../ressources/images/golang_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Go_(langage)"}></img>
+                <img src="/Portfolio/ressources/images/css_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"}></img>
+                <img src="/Portfolio/ressources/images/java_logo.svg" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Java_(langage)"}></img>
+                <img src="/Portfolio/ressources/images/javafx_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/JavaFX"}></img>
+                <img src="/Portfolio/ressources/images/html_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"}></img>
+                <img src="/Portfolio/ressources/images/python_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Python_(langage)"}></img>
+                <img src="/Portfolio/ressources/images/kotlin_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Kotlin_(langage)"}></img>
+                <img src="/Portfolio/ressources/images/lua_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Lua"}></img>
+                <img src="/Portfolio/ressources/images/sql_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Structured_Query_Language"}></img>
+                <img src="/Portfolio/ressources/images/golang_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Go_(langage)"}></img>
                 </div>
             </div>
 
             <div class="see-more" onClick={seeProjects}>
-                <img src="../ressources/images/starStart.svg" ></img>
+                <img src="/Portfolio/ressources/images/starStart.svg" ></img>
                 <h1>{frenchORenglish?"My Projects":"Mes projets"}</h1>
-                <img src="../ressources/images/starEnd.svg"></img>
+                <img src="/Portfolio/ressources/images/starEnd.svg"></img>
             </div>
         </div>
     );

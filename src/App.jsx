@@ -8,7 +8,7 @@ import NewComponentContacts from './NewComponentContact.jsx'
 function App() {
   const [Page,setPage]=useState(0)
   const [frenchORenglish,SETfrenchORenglish]=useState(1)
-
+  console.log("Thanks to autista for Knuckles model (https://sketchfab.com/autista).")
   if (Page==0){
     return (
       <>
