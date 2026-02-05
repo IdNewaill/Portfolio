@@ -3,7 +3,7 @@
   inset: 0;
   background-color: rgb(0, 0, 0);
   pointer-events: none;
-  background-image: url("../ressources/images/space.png");
+  background-image: url("/Portfolio/ressources/images/space.png");
   z-index: -1;
   animation: reveal 2s ease-out forwards;
   clip-path: circle(0% at 50% 50%);

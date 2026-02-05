@@ -5,8 +5,8 @@ function NewComponent(props){
     const { SETfrenchORenglish } = props;
     const { frenchORenglish } = props ;
 
-    const hover_sound = new Audio("../ressources/sons/onHover.wav")
-    const click2_sound = new Audio("../ressources/sons/click2.wav")
+    const hover_sound = new Audio("/Portfolio/ressources/sons/onHover.wav")
+    const click2_sound = new Audio("/Portfolio/ressources/sons/click2.wav")
 
     function PlayonHover(){
         hover_sound.play();
@@ -14,7 +14,7 @@ function NewComponent(props){
 
     const [copier,MettreCopier]=useState(false)
 
-    const click_sound = new Audio("../ressources/sons/click.wav")
+    const click_sound = new Audio("/Portfolio/ressources/sons/click.wav")
 
     function fallbackCopy(text) {
         const textarea = document.createElement("textarea");
@@ -81,7 +81,7 @@ function NewComponent(props){
                 <h3>{frenchORenglish?"Contact me here":"Contactez moi ici"}</h3>
             </div>
             <div className="contact-gmail">
-                <img src="../ressources/images/gmail_logo.png" width="200" height="100%" onClick={() => window.location.href = "mailto:gregoire.delugre@free.fr"}></img>
+                <img src="/Portfolio/ressources/images/gmail_logo.png" width="200" height="100%" onClick={() => window.location.href = "mailto:gregoire.delugre@free.fr"}></img>
                 <button className="contact-email" onClick={copyEmailIntoClipBoard}>{copier?(frenchORenglish?"It's copied !":"C'est copié !"):"gregoire.delugre@free.fr"}</button>
             </div>
         </>
