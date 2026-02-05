@@ -81,7 +81,7 @@ function NewComponent(props){
                 <h3>{frenchORenglish?"Contact me here":"Contactez moi ici"}</h3>
             </div>
             <div className="contact-gmail">
-                <img src="/Portfolio/ressources/images/gmail_logo.png" width="200" height="100%" onClick={() => window.location.href = "mailto:gregoire.delugre@free.fr"}></img>
+                <img src="ressources/images/gmail_logo.png" width="200" height="100%" onClick={() => window.location.href = "mailto:gregoire.delugre@free.fr"}></img>
                 <button className="contact-email" onClick={copyEmailIntoClipBoard}>{copier?(frenchORenglish?"It's copied !":"C'est copié !"):"gregoire.delugre@free.fr"}</button>
             </div>
         </>

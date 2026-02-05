@@ -67,22 +67,22 @@ function NewComponent(props){
             <div className="global-info-block">
                 <h2>{frenchORenglish?"KNOWN LANGUAGES":"LANGAGES QUE JE CONNAIS"}</h2>
                 <div className="global-image-box">
-                <img src="/Portfolio/ressources/images/css_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"}></img>
-                <img src="/Portfolio/ressources/images/java_logo.svg" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Java_(langage)"}></img>
-                <img src="/Portfolio/ressources/images/javafx_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/JavaFX"}></img>
-                <img src="/Portfolio/ressources/images/html_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"}></img>
-                <img src="/Portfolio/ressources/images/python_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Python_(langage)"}></img>
-                <img src="/Portfolio/ressources/images/kotlin_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Kotlin_(langage)"}></img>
-                <img src="/Portfolio/ressources/images/lua_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Lua"}></img>
-                <img src="/Portfolio/ressources/images/sql_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Structured_Query_Language"}></img>
-                <img src="/Portfolio/ressources/images/golang_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Go_(langage)"}></img>
+                <img src="ressources/images/css_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade"}></img>
+                <img src="ressources/images/java_logo.svg" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Java_(langage)"}></img>
+                <img src="ressources/images/javafx_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/JavaFX"}></img>
+                <img src="ressources/images/html_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Hypertext_Markup_Language"}></img>
+                <img src="ressources/images/python_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Python_(langage)"}></img>
+                <img src="ressources/images/kotlin_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Kotlin_(langage)"}></img>
+                <img src="ressources/images/lua_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Lua"}></img>
+                <img src="ressources/images/sql_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Structured_Query_Language"}></img>
+                <img src="ressources/images/golang_logo.png" draggable="false" onClick={() => window.location.href = "https://fr.wikipedia.org/wiki/Go_(langage)"}></img>
                 </div>
             </div>
 
             <div className="see-more" onClick={seeProjects}>
-                <img src="/Portfolio/ressources/images/starStart.svg" ></img>
+                <img src="ressources/images/starStart.svg" ></img>
                 <h1>{frenchORenglish?"My Projects":"Mes projets"}</h1>
-                <img src="/Portfolio/ressources/images/starEnd.svg"></img>
+                <img src="ressources/images/starEnd.svg"></img>
             </div>
         </div>
     );
