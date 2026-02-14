@@ -40,24 +40,27 @@
 }
 
 .main-bar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 25px;
-  padding: 20px;
-  height: 10px;
-  margin-left: 10%;
-  margin-right: 10%;
   justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  background: #ffffff9d;
+  padding: 10px;
+  border: #ffffff;
+  border-style: groove;
 }
+
 
 
 .main-bar button{
   font-size: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color:#00000000;
   border-radius: 25px;
-  height: 28px;
+  height: 40px;
   border: none;
   width: 25%;
   text-align: center;
@@ -71,7 +74,7 @@
   align-items: center;
   justify-content: center;
   gap: 1vh;
-  height: 40vh;
+  height: 50vh;
   font-size: 7vh;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
