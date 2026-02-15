@@ -35,8 +35,8 @@ function NewComponent(props){
     return (
         <>
             <div align="right" className="language">
-                <button onClick={setEnglish}>EN</button>
-                <button onClick={setFrench}>FR</button>
+                <button onClick={setEnglish}>{frenchORenglish?'E͟N':'EN'}</button>
+                <button onClick={setFrench}>{frenchORenglish?'FR':'F͟R'}</button>
             </div>
             <div className="main-bar">
                 <button onMouseEnter={PlayonHover} onClick={seeHome}>{frenchORenglish?'Home':'Accueil'}</button>
@@ -88,7 +88,7 @@ function NewComponent(props){
                     <h2>{frenchORenglish?"Forgotten Sea - Fake e-commerce website":"Forgotten Sea - Faux site e-commerce"}</h2>
                 </div>
                 <div className="project-presentation">
-                    <img src="ressources/images/forgotten_sea.png" width="100%" height="auto" autoPlay muted loop preload="metadata"></img>
+                    <img src="ressources/images/forgotten_sea.png" width="100%" height="auto" autoPlay muted loop preload="metadata" onClick={() => window.location.href = "https://github.com/IdNewaill/ForgottenSea/tree/main"}></img>
                     <h3><u>▹ Description</u></h3>
                     <h2>{frenchORenglish?"This fake e-commerce website selling exotic fish was a project made in group. It contains a Home page, a Catalog page, a Account page and also an admin page connected to a database. It obvisouly have a back-end part and we made it using PHP.":"Ce petit site e-commerce de poissons exotiques a été crée à des fins éducatives et en groupe. Il contient une page d'accueil, une page catalogue, des pages relatives à la gestion des comptes utilisateurs (inscription, connexion, modifier mes informations) ainsi qu'un admin pannel permettant de gérer les produits disponibles, les utilisateurs ainsi que leurs commandes. Cela implique la connexion à une base de donnée (ici MySql) et donc il y a du Back-End avec l'utilisation de Php."}</h2>
                     <a href="https://github.com/IdNewaill/ForgottenSea/tree/main" target="_blank">Aller sur le site</a>

@@ -36,8 +36,8 @@ function NewComponent(props){
         
         <div>
             <div align="right" className="language">
-                <button onClick={setEnglish}>EN</button>
-                <button onClick={setFrench}>FR</button>
+                <button onClick={setEnglish}>{frenchORenglish?'E͟N':'EN'}</button>
+                <button onClick={setFrench}>{frenchORenglish?'FR':'F͟R'}</button>
             </div>
             <div className="main-bar">
                 <button onMouseEnter={PlayonHover}>{frenchORenglish?'Home':'Accueil'}</button>
