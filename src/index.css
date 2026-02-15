@@ -25,10 +25,14 @@
   }
 }
 
-.language{
+.language {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;     
   flex-wrap: wrap;
-  justify-content: right;
 }
+
 
 .language button{
   flex-wrap: wrap;
@@ -278,7 +282,10 @@ img:hover{
 }
 
 .project-presentation h2{
-  font-size: 30px;
+  font-size: 20px;
+  background-color: #353535;
+  padding: 2%;
+  border-radius: 20px;
 }
 
 .project-presentation h1{
@@ -295,11 +302,16 @@ img:hover{
   display: block;
   margin: 0 auto;
   text-align: center;
+  font-size: 20px;
+  margin-top: 5%;
 }
 
 .project-presentation a text {
   font-size: large;
-  
+}
+
+.project-presentation p{
+  font-size: large;
 }
 
 .left-aligned-class{
