@@ -285,6 +285,23 @@ img:hover{
   font-size: 20px;
 }
 
+.project-presentation a{
+  background-color: #52d7ff;
+  padding: 20px;
+  padding-left: 40%;
+  padding-right: 40%;
+  -webkit-text-fill-color: white;
+  border-radius: 40px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.project-presentation a text {
+  font-size: large;
+  
+}
+
 .left-aligned-class{
   display: flex;
   align-items: center;

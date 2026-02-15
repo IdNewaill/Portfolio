@@ -46,6 +46,7 @@ function NewComponent(props){
             <div className="simple-presentation-div">
                 <h3>{frenchORenglish?"Some of my Projects":"Quelques de mes Projets"}</h3>
             </div>
+
             <div className="global-info-block">
                 <div className="left-aligned-class">
                     <div className="tag-work-in-progress">
@@ -56,6 +57,7 @@ function NewComponent(props){
                 <div className="project-presentation">
                     <video src="ressources/videos/demoOfPaperIO.mp4" width="100%" height="500px" autoPlay muted loop preload="metadata"></video>
                     <h2>{frenchORenglish?"A simple remake made in Python on a Numworks":"Un simple Remix fait en Python sur une Numworks"}</h2>
+                    <a href="https://my.numworks.com/python/playidaill/paperio" target="_blank">Installer</a>
                 </div>
             </div>
 
@@ -63,37 +65,31 @@ function NewComponent(props){
             <div className="global-info-block">
                 <div className="left-aligned-class">
                     <div className="tag-work-in-progress">
-                        <h3>{frenchORenglish?'Work in progress !':'En cours !'}</h3>
+                        <h3>{frenchORenglish?'Released !':'Disponible !'}</h3>
                     </div>
-                    <h2>{frenchORenglish?"Lymen Studio - small LLC n":"Lymen Studio - petite SARL"}</h2>
+                    <h2>{frenchORenglish?"MakeUI - A small university project":"MakeUI - Un petit projet universitaire"}</h2>
                 </div>
                 <div className="project-presentation">
-                    <iframe src="https://lymen-studio.fr/" width="100%" height="500px"></iframe>
-                    <h2>{frenchORenglish?"It’s a Small LLC, made with friends selling differents services around developement and design.":"C'est une petite SARL, faite avec des amis proposant divers services tel que le développement et le design"}</h2>
-                    <h1>{frenchORenglish?"For now it’s just a idea but feel free to check the website ! (not fully made too)":"Pour l'instant il s'agit simplement d'une idée mais vous pouvez allez jeter un coup d'oeil au site !"}</h1>
+                    <iframe src="https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html" width="100%" height="500px"></iframe>
+                    <h2>{frenchORenglish?"It's a small Website created as a first University Project, using Html, Css (And some Javascript but not my code)":"Il s'agît d'un faux site Commercial crée en tant que projet pour l'Université qui utilise Html, Css (Et un peu de Javascript mais ce n'est pas mon code)."}</h2>
+                    <h1>{frenchORenglish?"This website was just created to play with Html and Css, that's why it contains a lot of 'Lorem Ipsum'":"Ce site a simplement été crée pour jouer avec Html et Css, c'est pour cela qu'il contient beaucoup de 'Lorem Ipsum'"}</h1>
+                    <a href="https://htmlpreview.github.io/?https://raw.githubusercontent.com/IdNewaill/MakeUI/refs/heads/main/public/index.html" target="_blank">Aller sur le site</a>
                 </div>
             </div>
 
             <div className="global-info-block">
                 <div className="left-aligned-class">
                     <div className="tag-work-in-progress">
-                        <h3>{frenchORenglish?'Work in progress !':'En cours !'}</h3>
+                        <h3>{frenchORenglish?'Released !':'Disponible !'}</h3>
                     </div>
-                    <h2>{frenchORenglish?"Forgotten Files - Horror Game":"Forgotten Files - Jeu d'horreur"}</h2>
+                    <h2>{frenchORenglish?"Forgotten Sea - Fake e-commerce website":"Forgotten Sea - Faux site e-commerce"}</h2>
                 </div>
                 <div className="project-presentation">
-                    <img draggable="false" src="ressources/images/ForgottenFilesImage.png" width="100%" height="100%"></img>
-                    <h2>{frenchORenglish?"It’s an horror game in the Fives Nights At Freddy’s type.":"C'est un jeu d'horreur sur le thème de Fives Nights At Freddy's."}</h2>
-                    <div className="normal-left-text">
-                        <h1>{frenchORenglish?"The game is still in developement but I hired voice actors and 47 peoples have applied.":"Le jeu est toujours dans sa phase de développement mais j'ai recruter des voice-actors et 47 personnes ont postulés."}</h1>
-                        <h1>{frenchORenglish?"I’ve also worked on it with somes friends, it make me learn to :":"J'y ai travailler avec des amis, cela m'a permiti de :"}</h1>
-                        <h1>○ {frenchORenglish?"Manage a":"Diriger une"} <span className="highlight-me-red">{frenchORenglish?"team":"équipe"}</span></h1>
-                        <h1>○ <span className="highlight-me-yellow">{frenchORenglish?"Recruit":"Recruter"}</span></h1>
-                        <h1>○ {frenchORenglish?"Be":"Être"} <span className="highlight-me-green">{frenchORenglish?"multitasking":"multi-tâches"}</span></h1>
-                        <h1>{frenchORenglish?"And":"Et"} <span className="highlight-me-blue">{frenchORenglish?"more":"bien plus"}</span> !</h1>
-                    </div>
+                    <img src="ressources/images/forgotten_sea.png" width="100%" height="500px" autoPlay muted loop preload="metadata"></img>
+                    <a href="https://github.com/IdNewaill/ForgottenSea" target="_blank">Installer</a>
                 </div>
             </div>
+
             <div className="simple-presentation-div" onClick={() => window.location.href = "https://github.com/IdNewaill"}>
                 <img src="ressources/images/github_logo.png" width="10%"></img>
                 <h3>{frenchORenglish?"Discover more on my Github":"Découvrez plus sur mon Github"} !</h3>
